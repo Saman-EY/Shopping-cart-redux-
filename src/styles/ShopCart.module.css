@@ -24,15 +24,15 @@
     font-weight: bold;
     margin-bottom: 2rem;
     font-size: 1.4rem;
-    color: rgb(5, 152, 5);
+    color: rgb(10, 211, 10);
 }
 
 .messageBox a {
-    background-color: rgb(72, 122, 238);
+    background-color: rgb(1, 65, 214);
     color: white;
     border-radius: 5px;
     border: 0;
-    box-shadow: 0 2px 5px 1px rgb(186, 185, 185);
+    box-shadow: 0 2px 5px 1px rgb(74, 74, 74);
     transition: all ease 0.3s;
     text-decoration: none;
     padding: 9px 20px;
@@ -115,9 +115,6 @@
         width: 300px;
     }
 
-    .messageBox {
-        width: 110vw;
-    }
 }
 
 @media (max-width: 550px) {

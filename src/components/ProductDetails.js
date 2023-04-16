@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
@@ -6,6 +6,7 @@ import fetchProduct from '../redux/products/productsAction';
 
 // style
 import styles from '../styles/ProductDetails.module.css';
+import Loader from './shared/Loader';
 
 const ProductDetails = () => {
   let params = useParams();
@@ -16,7 +17,6 @@ const ProductDetails = () => {
   useEffect(() => {
     if (data.length === 0) {
       dispatch(fetchProduct());
-      console.log('hi');
     }
   }, []);
 
@@ -24,6 +24,11 @@ const ProductDetails = () => {
 
   return (
     <div className={styles.mainContainer}>
+      {!product && (
+        <section style={{marginTop: "10rem", display: "flex", justifyContent: "space-between"}}>
+          <Loader />
+        </section>
+      )}
       {product && (
         <div className={styles.container}>
           <figure>

@@ -1,12 +1,21 @@
 import React from 'react';
-import Spinner from "../../assets/icons/Spinner.gif"
+import { Oval } from 'react-loader-spinner';
 
 const Loader = () => {
-    return (
-        <div style={{width : "100%", textAlign: "center"}}>
-            <img src={Spinner} alt="" />
-        </div>
-    );
+  return (
+    <section style={{display: "flex", justifyContent: "center"}}>
+      <Oval
+        height={70}
+        width={70}
+        color="lightblue"
+        visible={true}
+        ariaLabel="oval-loading"
+        secondaryColor="lightblue"
+        strokeWidth={8}
+        strokeWidthSecondary={8}
+      />
+    </section>
+  );
 };
 
-export default Loader; 
+export default Loader;
