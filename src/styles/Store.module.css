@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    margin-top: 9rem;
+    margin: 10rem auto;
+    max-width: 1200px;
+}
+
+.container > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 3rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+@media (max-width:545px) {
+    .container > div {
+        padding: 0 6rem;
+    }
+}
+
+@media (max-width:400px) {
+    .container > div {
+        padding: 0 1rem;
+    }
+}
+

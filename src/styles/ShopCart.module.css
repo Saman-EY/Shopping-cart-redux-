@@ -1,0 +1,127 @@
+.mainContainer {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column-reverse;
+    padding: 0rem 3rem 4rem;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.messageBox p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: rgb(5, 152, 5);
+}
+
+.messageBox a {
+    background-color: rgb(72, 122, 238);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px 5px 1px rgb(186, 185, 185);
+    transition: all ease 0.3s;
+    text-decoration: none;
+    padding: 9px 20px;
+    font-weight: bold;
+}
+
+.messageBox a:hover {
+    background-color: blue;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 8px;
+    
+}
+
+.payment p {
+    color: rgb(71, 120, 233);
+    font-weight: bold;
+}
+
+.payment span {
+    color: rgb(103, 100, 100);
+    font-weight: normal;
+}
+
+.payment div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.payment div button:nth-child(1) {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(7, 173, 7);
+    font-size: 1.1rem;
+}
+
+.payment div button:nth-child(1):hover {
+    color: green;
+}
+
+.payment div button:nth-child(2) {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-color: rgb(6, 167, 6);
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px rgb(186, 185, 185);
+    transition: all ease 0.3s;
+}
+
+.payment div button:nth-child(2):hover {
+    background-color: rgb(3, 101, 3);
+}
+
+@media (min-width: 1050px) {
+    .mainContainer {
+        flex-direction: row;
+        margin-top: 10rem;
+        padding: 0rem;
+    }
+
+    .cartContainer {
+        width: 50%;
+    }
+
+    .payment {
+        padding: 1rem;
+        width: 300px;
+    }
+
+    .messageBox {
+        width: 110vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainContainer {
+        padding: 0rem 1rem 3rem;
+    }
+}
